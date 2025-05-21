@@ -1,0 +1,46 @@
+start
+new a number
+set a 2 + 2
+log string "2 + 2 = " >> a
+delete a
+finish
+
+start
+new a number
+set a 17
+log string "Hello, I am " >> a >> " years old"
+delete a
+finish
+
+start
+new a number
+new b number
+new c number
+set a 2
+set b 2
+set c a+b
+log string "c = a + b = " >> a >> " + " >> b >> " = " >> c
+delete a
+delete b
+delete c
+finish
+
+start
+new a number
+new b number
+new c number
+new i number
+set i 1
+set b 2
+set c 2
+loop mul (c > i)
+set b b+c
+set i i+1
+end mul
+set a 2 + b
+log string "x = 2 + 2 * 2 = " >> a
+delete a
+delete b
+delete c
+delete i
+finish
